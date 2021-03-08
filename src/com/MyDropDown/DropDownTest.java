@@ -1,4 +1,4 @@
-package com.DropDown;
+package com.MyDropDown;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,10 +7,10 @@ import org.openqa.selenium.support.ui.Select;
 import com.Base.BaseClass;
 
 
+
 public class DropDownTest extends BaseClass {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args)   {
 		launchChrome();
 		baseURL();
 		selectDropDownOption();
@@ -18,14 +18,13 @@ public class DropDownTest extends BaseClass {
 		// my code to see the drop down item. Need to include "throws InterruptedException" in main method
 		// Thread.sleep(3000);
 		
-		closeBrowser();	
-
+		closeBrowser();
 	}
 	
 	public static void baseURL() {
 		driver.get("https://the-internet.herokuapp.com/dropdown");
 	}
-	
+
 	/*
 	 * Methods
 	 *  1. selectByValue()
@@ -48,6 +47,5 @@ public class DropDownTest extends BaseClass {
 		dropDownOpt.selectByIndex(1);
 		
 	}
-	
-	
+
 }
